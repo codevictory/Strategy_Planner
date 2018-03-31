@@ -1,0 +1,206 @@
+Name;Food;Wood;Gold;Stone;Build time;Effect;Building;Age
+Crossbowman;125;75;0;0;35;Upgrades Archer;Archery Range;Castle
+Thumb Ring;300;250;0;0;45;faster RT (10-20%) and 100% accuracy;Archery Range;Castle
+Arbalest;350;0;300;0;50;Upgrades Crossbowman;Archery Range;Imperial
+Elite Genitour;500;450;0;0;60;Upgrades Genitours;Archery Range;Imperial
+Elite Skirmisher;0;200;100;0;50;Upgrades Skirmisher;Archery Range;Imperial
+Heavy Cavalry Archer;900;0;500;0;50;Upgrades Cavalry Archer;Archery Range;Imperial
+Imperial Skirmisher;300;0;450;0;50;Upgrades Elite Skirmisher;Archery Range;Imperial
+Parthian Tactics;200;0;250;0;65;(Heavy) Cavalry archers, Elephant archers and Mangudai +1/+2 AR / (Heavy) Cavalry Archer +4 attack against spearman line / Mangudai and Elephant Archer +2 against spearman line;Archery Range;Imperial
+Man-at-arms;100;0;40;0;40;Upgrades Militia;Barracks;Feudal
+Tracking;50;0;0;0;35;infantry +2 LOS, +2 search radius;Barracks;Feudal
+Arson;150;0;50;0;25;Infantry +2 attack vs standard buildings;Barracks;Castle
+Eagle Warrior;200;0;200;0;50;Upgrades Eagle Scout;Barracks;Castle
+Long Swordsman;200;0;65;0;45;Upgrades Man-at-arms;Barracks;Castle
+Pikeman;215;0;90;0;45;Upgrades Spearman;Barracks;Castle
+Squires;100;0;0;0;40;infantry MR * 1.1;Barracks;Castle
+Champion;750;0;350;0;100;Upgrades Two-handed Swordsman;Barracks;Imperial
+Elite Eagle Warrior;800;0;500;0;40;Upgrades Eagle Warrior;Barracks;Imperial
+Halberdier;300;0;600;0;50;Upgrades Pikeman;Barracks;Imperial
+Two-handed Swordsman;300;0;100;0;75;Upgrades Long Swordsman;Barracks;Imperial
+Fletching;100;0;50;0;30;arrow shooting units and structures +1 AT +1 RA +1 LOS +1 search radius, see extra info;Blacksmith;Feudal
+Forging;150;0;0;0;50;infantry and cavalry +1 AT;Blacksmith;Feudal
+Padded Archer Armor;100;0;0;0;40;archers, cavalry archers, skirmishers / hand cannoneers, conquistador +1/+1 AR;Blacksmith;Feudal
+Scale Barding Armor;150;0;0;0;45;Cavalry +1/+1 AR;Blacksmith;Feudal
+Scale Mail Armor;100;0;0;0;40;Infantry +1/+1 AR;Blacksmith;Feudal
+Bodkin Arrow;200;0;100;0;35;arrow shooting units and structures +1 AT +1 RA +1 LOS +1 search radius, see extra info;Blacksmith;Castle
+Chain Barding Armor;250;0;150;0;60;Cavalry +1/+1 AR;Blacksmith;Castle
+Chain Mail Armor;200;0;100;0;55;Infantry +1/+1 AR;Blacksmith;Castle
+Iron Casting;220;0;120;0;75;Infantry and cavalry +1 AT;Blacksmith;Castle
+Leather Archer Armor;150;0;150;0;55;archers, cavalry archers, skirmishers / hand cannoneers, conquistador +1/+1 AR;Blacksmith;Castle
+Blast Furnace;275;0;225;0;100;Cavalry and infantry +2 AT;Blacksmith;Imperial
+Bracer;300;0;200;0;40;arrow shooting units and structures +1 AT +1 RA +1 LOS +1 search radius, see extra info;Blacksmith;Imperial
+Plate Barding Armor;350;0;200;0;75;Cavalry +1/+2 AR;Blacksmith;Imperial
+Plate Mail Armor;300;0;150;0;70;Infantry +1/+2 AR;Blacksmith;Imperial
+Ring Archer Armor;250;0;250;0;70;archers, cavalry archers, skirmishers / hand cannoneers, conquistador +1/+2 AR;Blacksmith;Imperial
+Conscription;150;0;150;0;60;Barracks, Archer Range, Stable, Castle work rate * 1.33 / (units are created ~25% faster);Castle;Imperial
+Hoardings;400;0;400;0;75;Castle +21% HP (HP*1.21 - 5808 HP);Castle;Imperial
+Sappers;400;0;200;0;10;Villagers +15 attack vs buildings and stone defenses;Castle;Imperial
+Spies;0;0;10000;0;1;Random map games. Show enemy line of sight;Castle;Imperial
+Treason;0;0;400;0;1;Regicide games. Flare enemy king's location for a few seconds;Castle;Imperial
+Careening;250;0;150;0;50;Ships +0/+1 AR, transport ships carry +5 units;Dock;Castle
+Gillnets;150;200;0;0;45;Fishing ships work 25% faster;Dock;Castle
+War Galley;230;0;100;0;50;Upgrades Galley, Fire Galley, Demolition Raft - all three ships are upgraded with this technology.;Dock;Castle
+Cannon Galleon;400;500;0;0;50;;Dock;Imperial
+Dry Dock;500;0;400;0;60;Ships movement rate * 1.15 (+15%), transport ships carry +10 units;Dock;Imperial
+Elite Cannon Galleon;525;0;500;0;30;Upgrades Cannon Galleon;Dock;Imperial
+Elite Caravel;750;0;475;0;60;Upgrades Caravel;Dock;Imperial
+Elite Longboat;750;0;475;0;60;Upgrades Longboat;Dock;Imperial
+Elite Turtle Ship;1000;0;800;0;65;Upgrades Turtle Ship;Dock;Imperial
+Fast Fire Ship;280;0;250;0;50;Upgrades Fire Ship;Dock;Imperial
+Galleon;400;315;0;0;65;Upgrades War Galley;Dock;Imperial
+Heavy Demolition Ship;0;200;300;0;50;Upgrades Demolition Ship;Dock;Imperial
+Shipwright;1000;0;300;0;60;Ships wood cost * 0.8 (-20%), build time * 0.65 (-35%);Dock;Imperial
+Double-Bit Axe;100;50;0;0;25;Wood choppers work rate x 1.2 (20% faster);Lumber camp;Feudal
+Bow Saw;150;100;0;0;50;Wood choppers work rate x 1.2 (20% faster) / (results in 1.44 x work rate with double-bit axe);Lumber camp;Castle
+Two-Man Saw;300;200;0;0;100;Wood choppers work rate x 1.1 (10% faster) / (results in 1.586 x work rate with bow saw);Lumber camp;Imperial
+Cartography;0;0;0;0;1;See ally LOS;Market;Feudal
+Coinage;200;0;100;0;70;Tribute inefficiency - 0.2 (20% tribute fee from 30%);Market;Feudal
+Banking;300;0;200;0;70;Tribute inefficiency - 0 (0% tribute fee from 20% - coinage);Market;Castle
+Caravan;200;0;200;0;40;Trade Cart and Trade Cog MR * 1.5 (50% faster);Market;Castle
+Guilds;300;0;200;0;50;Commodity trading fee - 15% (from 30%);Market;Imperial
+Horse Collar;75;75;0;0;20;Farm food amount +75;Mill;Feudal
+Heavy Plow;125;125;0;0;40;Farm food amount +125, farmers carry +1 food;Mill;Castle
+Crop Rotation;250;250;0;0;70;Farm food amount +175;Mill;Imperial
+Gold Mining;100;75;0;0;30;Gold miners work rate x 1.15 (15% faster);Mining camp;Feudal
+Stone Mining;100;75;0;0;30;Stone miners work rate x 1.15 (15% faster);Mining camp;Feudal
+Gold Shaft Mining;200;150;0;0;75;Gold miners work rate x 1.15 (15% faster) / (results in 1.3225 x work rate with gold mining);Mining camp;Castle
+Stone Shaft Mining;200;150;0;0;75;Stone miners work rate x 1.15 (15% faster) / (results in 1.3225 x work rate with stone mining);Mining camp;Castle
+Atonement;0;0;325;0;40;monks convert enemy monks;Monastery;Castle
+Fervor;0;0;140;0;50;+15% bonus for monks (fixed from old AoC, where only monks carrying relics were affected);Monastery;Castle
+Herbal Medicine;0;0;350;0;35;garrisoned units 4x healing speed;Monastery;Castle
+Heresy;0;0;1000;0;60;converted units die;Monastery;Castle
+Redemption;0;0;475;0;50;convert siege,buildings;Monastery;Castle
+Sanctity;0;0;120;0;60;monks +15 HP;Monastery;Castle
+Block Printing;0;0;200;0;55;monks +3 RA;Monastery;Imperial
+Faith;750;0;1000;0;60;units are 50% harder to convert;Monastery;Imperial
+Illumination;0;0;120;0;65;Faith regain 50% faster;Monastery;Imperial
+Theocracy;0;0;200;0;75;only 1 monk needs to rest in a group;Monastery;Imperial
+Capped Ram;300;0;0;0;50;Upgrades Battering ram;Siege Workshop;Imperial
+Heavy Scorpion;1000;1100;0;0;50;Upgrades Scorpion;Siege Workshop;Imperial
+Onager;800;0;500;0;75;Upgrades Mangonel;Siege Workshop;Imperial
+Siege Onager;1450;0;1000;0;150;Upgrades Onager;Siege Workshop;Imperial
+Siege Ram;1000;0;0;0;75;Upgrades Capped Ram;Siege Workshop;Imperial
+Bloodlines;150;0;100;0;50;Cavalry, Cavalry Archers, Conquistador, Missionaries +20 hit points;Stable;Feudal
+Husbandry;150;0;0;0;40;Cavalry, Cavalry Archers, Conquistador MR * 1.1;Stable;Castle
+Light Cavalry;150;0;50;0;45;Upgrades Scout;Stable;Castle
+Cavalier;300;0;300;0;10;Upgrades Knight;Stable;Imperial
+Elite Battle Elephant;800;0;500;0;80;Upgrades Battle Elephant;Stable;Imperial
+Heavy Camel;325;0;360;0;105;Upgrades Camel;Stable;Imperial
+Hussar;500;0;600;0;50;Upgrades Light Cavalry;Stable;Imperial
+Imperial Camel;1200;0;600;0;125;Upgrades Indian Heavy Camel;Stable;Imperial
+Paladin;1300;0;750;0;170;Upgrades Cavalier;Stable;Imperial
+Feudal Age;500;0;0;0;130;;Town Center;Dark
+Loom;0;0;50;0;25;Villagers +15 HP +1/+2 armor;Town Center;Dark
+Castle Age;800;0;200;0;160;;Town Center;Feudal
+Town Watch;75;0;0;0;25;Buildings, Towers +4 LOS;Town Center;Feudal
+Wheelbarrow;175;50;0;0;75;Villagers MR * 1.1, carrying capacity * 1.25;Town Center;Feudal
+Hand Cart;300;200;0;0;55;Villagers MR * 1.1, carrying capacity * 1.5;Town Center;Castle
+Imperial Age;1000;0;800;0;190;;Town Center;Castle
+Town Patrol;300;0;100;0;40;Buildings, Towers +4 LOS;Town Center;Castle
+Anarchy;450;0;250;0;60;Goths can create Huskarls in barracks;Castle;Castle
+Andean Sling;200;0;300;0;40;Incan Skirmishers and Slingers no minimum range;Castle;Castle
+Atlatl;400;0;350;0;40;Aztecs skirmisher line +1 pierce attack +1 range +1 search readius;Castle;Castle
+Boiling Oil;0;200;0;100;40;Persian Castles +9 attack vs rams / (effectively +8 against battering, +7 vs capped, +6 vs siege ram);Castle;Castle
+Carrack;0;200;300;0;40;Portuguese ships receive +1/+1 armor;Castle;Castle
+Chatras;250;0;250;0;40;Battle Elephants receive +30 HP;Castle;Castle
+Chieftains;400;0;300;0;40;Viking infantry get +5 attack against cavalry and +2 against camels;Castle;Castle
+Chivalry;0;400;400;0;40;Franks stables work rate*1.4;Castle;Castle
+Great Wall;0;400;0;200;40;Chinese walls, gates, towers HP*1.3;Castle;Castle
+Greek Fire;250;0;300;0;40;Byzantines Fire ships +1 range;Castle;Castle
+Howdah;200;300;0;0;40;Battle Elephants +1/+2 armor;Castle;Castle
+Inquisition;100;0;300;0;40;Spanish monks convert faster. / (convert time? min/max -1/-1 convert building time? min/max -5/-5 / convert building chance +5 (25 -> 30);Castle;Castle
+Ironclad;0;400;350;0;60;Teutons siege weapons (including packed treb) +4 melee armor;Castle;Castle
+Kasbah;250;0;250;0;40;Berber team castles work 25% faster / Castles work rate 1.25 -> research and build times -20%;Castle;Castle
+Madrasah;200;0;100;0;30;Saracen monks return 33% of their cost;Castle;Castle
+Marauders;0;300;200;0;40;Huns can make Tarkans in stables;Castle;Castle
+Mercenaries;200;0;300;0;40;Magyar Huszar costs no gold;Castle;Castle
+Nomads;0;300;150;0;40;Mongols - destroyed houses don't lose their population room;Castle;Castle
+Obsidian Arrow;300;0;300;0;40;Mayan archer, crossbowman, arbalest has extra attack +6 standard buildings, +6 stone defense;Castle;Castle
+Orthodoxy;200;0;300;0;40;Slav monks have +3/+3 armor;Castle;Castle
+Panokseon;300;300;0;0;40;Korean Turtle Ships move 15% faster (MR*1.15 = 0.9 -> 1.035);Castle;Castle
+Pavise;300;0;150;0;40;Italian foot archers +1/+1 armor;Castle;Castle
+Royal Heirs;300;0;300;0;40;Ethiopian Shotel Warriors creation speed halved / (0.5*BT means 8*0.5 -> 4 seconds);Castle;Castle
+Sipahi;350;0;150;0;60;Turkish cavalry archers +20HP;Castle;Castle
+Stronghold;250;0;200;0;30;"Celts 20% faster reload time / Reload time castles 1.5->1.2; towers 2.0->1.6";Castle;Castle
+Sultans;400;400;0;0;40;Indian gold miners work rate*1.1, trade units generate 10% more G, relics +5G/minute;Castle;Castle
+Thalassocracy;300;0;300;0;40;Upgrades your Docks to Harbors, which fire arrows.;Castle;Castle
+Tigui;200;300;0;0;40;Malian Town Centers fire arrows  / (+5 arrows without the need to garrison a unit);Castle;Castle
+Tusk Swords;0;200;300;0;40;Battle Elephants +3 attack;Castle;Castle
+Yasama;300;300;0;0;40;Japan towers shoot more arrows +2 (3 by default, at most 7 if at least 4 units garrisoned);Castle;Castle
+Yeomen;750;0;450;0;60;Britons, Foot archers and skirmishers +1 RA +1 LOS / Towers +2 attack;Castle;Castle
+Arquebus;700;0;400;0;40;Portuguese gunpowder units affected by Ballistics / Some projectiles move +0.5 tiles faster: hand cannoneer/organ gun 5.5 -> 6.0, (elite) cannon galleon 1.95 -> 2.45);Castle;Imperial
+Artillery;500;0;450;0;40;Turks, Bombard units +2 range (tower, galleon, cannon);Castle;Imperial
+Atheism;500;0;500;0;60;"Huns, +100 years Wonder/Relic victory time; -50% Spies/Treason cost";Castle;Imperial
+Bearded Axe;400;0;400;0;60;Franks, Throwing Axeman +1 RA +1 LOS;Castle;Imperial
+Berserkergang;850;0;400;0;40;Vikings, Berserks regenerate 2x faster - 2 HP every 3 seconds;Castle;Imperial
+Couriers;400;0;200;0;40;Incan Eagle Warriors, Kamayuks and Slingers +1/+2 armor (melee/pierce);Castle;Imperial
+Crenellations;600;0;400;0;60;Teutons, Castles +3 range, garrisoned infantry fires arrows;Castle;Imperial
+Double Crossbow;700;0;400;0;40;Ballista Elephants and Scorpions fire two projectiles. The second bolt has about 50% of the first bolt's attack.;Castle;Imperial
+Drill;500;0;450;0;60;Mongols, Siege Workshop units MR*1.5;Castle;Imperial
+Druzhina;1200;0;500;0;40;Slav infantry damage adjecent units. Blast radius +0.5, 5 damage (same as Cataphracts wih Logistica);Castle;Imperial
+El Dorado;750;0;450;0;50;Mayans, Eagle Warrior +40 HP;Castle;Imperial
+Farimba;650;0;400;0;40;Malian cavalry, camels +5 attack.;Castle;Imperial
+Forced Levy;1000;0;600;0;40;Militia-line units no longer cost Gold;Castle;Imperial
+Furor Celtica;750;0;450;0;50;Celts, Siege Workshop Units HP*1.4 (40% extra HP);Castle;Imperial
+Garland Wars;450;0;750;0;60;Aztecs, Infantry +4 attack;Castle;Imperial
+Kataparuto;750;0;400;0;60;Japanese, Trebuchets RT * 0.75 (25% faster reload time, practically 33% faster firing) / Trebuchets (un)pack 4x faster;Castle;Imperial
+Logistica;1000;0;600;0;50;Byzantines, Cataphract +0.5 blast radius - trample damage (5 damage) / +6 AT against infantry;Castle;Imperial
+Maghrabi Camels;700;0;300;0;40;Berber camel troops regenerate / 1HP every 4 seconds (0.25 HP/s);Castle;Imperial
+Mahouts;300;0;300;0;50;Persians, War Elephant MR * 1.3 = 0.78;Castle;Imperial
+Manipur Cavalry;650;0;400;0;40;Cavalry and Arambai deal +6 bonus attack vs buildings. Half of that can be blocked by the building armor of castles or the masonry research.;Castle;Imperial
+Paper Money;800;0;200;0;40;You and all your allies receive +500 Gold;Castle;Imperial
+Perfusion;400;0;600;0;40;Goths, Barracks working rate * 2 (unit creation time halved);Castle;Imperial
+Recurve Bow;600;0;400;0;40;Magyar cavalry archers +1 attack +1 range +1 LOS +1 search radius;Castle;Imperial
+Rocketry;600;0;600;0;60;Chinese, Chu Ko Nu +2 pierce damage, Scorpion +4 pierce;Castle;Imperial
+Shatagni;500;0;300;0;40;Indian hand cannoneers have +1 range;Castle;Imperial
+Shinkichon;800;0;500;0;60;Koreans, Mangonel line +1 RA;Castle;Imperial
+Silk Road;500;0;250;0;40;Italian Trade units cost *0.5;Castle;Imperial
+Supremacy;400;0;250;0;60;Spanish, Villagers +6 attack, +40 HP +2/+2 armor / with loom: 80HP 9 attack 3/4 armor;Castle;Imperial
+Torsion Engines;1000;0;600;0;40;Ethiopian siege workshop units blast radius increased / (+0.45 blast radius);Castle;Imperial
+Warwolf;0;500;250;0;40;Britons trebuchet accuracy 100% and 0.5 blast radius;Castle;Imperial
+Zealotry;750;0;800;0;50;Saracens, Mameluke and Camels +30 HP;Castle;Imperial
+Elite Arambai;1100;0;675;0;65;Upgrades Arambai;Castle;Imperial
+Elite Ballista Elephant;1000;0;500;0;70;Upgrades Ballista Elephant;Castle;Imperial
+Elite Berserk;1300;0;550;0;45;Upgrades Berserk;Castle;Imperial
+Elite Boyar;1000;0;600;0;60;Upgrades Boyar;Castle;Imperial
+Elite Camel Archer;0;1000;500;0;45;Upgrades Camel Archer;Castle;Imperial
+Elite Cataphract;1600;0;800;0;50;Upgrades Cataphract;Castle;Imperial
+Elite Chu Ko Nu;760;0;760;0;50;Upgrades Chu Ko Nu;Castle;Imperial
+Elite Conquistador;1200;0;600;0;60;Upgrades Conquistador;Castle;Imperial
+Elite Elephant Archer;1000;0;800;0;60;Upgrades Elephant Archer;Castle;Imperial
+Elite Gbeto;900;0;600;0;45;Upgrades Gbeto;Castle;Imperial
+Elite Genoese Crossbowman;900;0;750;0;60;Upgrades Italian Genoese Crossbowman;Castle;Imperial
+Elite Huskarl;1200;0;550;0;40;Upgrades Huskarl;Castle;Imperial
+Elite Jaguar Warrior;1000;0;500;0;45;Upgrades Jaguar Warrior;Castle;Imperial
+Elite Janissary;850;0;750;0;55;Upgrades Janissary;Castle;Imperial
+Elite Kamayuk;900;0;500;0;45;Upgrades Kamayuk;Castle;Imperial
+Elite Karambit Warrior;900;0;600;0;40;Upgrades Karambit Warrior;Castle;Imperial
+Elite Longbowman;850;0;850;0;60;Upgrades Longbowman;Castle;Imperial
+Elite Magyar Huszar;800;0;600;0;60;Upgrades Magyar Huszar;Castle;Imperial
+Elite Mameluke;600;0;500;0;50;Upgrades Mameluke;Castle;Imperial
+Elite Mangudai;1100;0;675;0;50;Upgrades Mangudai;Castle;Imperial
+Elite Organ Gun;1200;0;500;0;45;Upgrades Organ Gun;Castle;Imperial
+Elite Plumed Archer;700;1000;0;0;45;Upgrades Plumed Archer;Castle;Imperial
+Elite Rattan Archer;1000;0;750;0;45;Upgrades Rattan Archer;Castle;Imperial
+Elite Samurai;950;0;875;0;60;Upgrades Samurai;Castle;Imperial
+Elite Shotel Warrior;1200;0;550;0;45;Upgrades Shotel Warrior;Castle;Imperial
+Elite Tarkan;1000;0;500;0;45;Upgrades Tarkan;Castle;Imperial
+Elite Teutonic Knight;1200;0;600;0;50;Upgrades Teutonic Knight;Castle;Imperial
+Elite Throwing Axeman;1000;0;750;0;45;Upgrades Throwing Axeman;Castle;Imperial
+Elite War Elephant;1600;0;1200;0;75;Upgrades War Elephant;Castle;Imperial
+Elite War Wagon;1000;0;800;0;75;Upgrades War Wagon;Castle;Imperial
+Elite Woad Raider;1000;0;800;0;45;Upgrades Woad Raider;Castle;Imperial
+Ballistics;0;300;175;0;60;Arrow/bolt-firing units/buildings and Bombard Towers aim at the spot an enemy unit is moving towards instead of where it currently is;University;Castle
+Fortified Wall;200;0;100;0;50;Fortified walls, stronger gates see extra info;University;Castle
+Guard Tower;100;250;0;0;30;Upgrades Watch Tower;University;Castle
+Heated Shot;350;0;100;0;30;Towers do 2.25 * attack bonus vs ships / Castles do +4 damage against ships / Harbors do +4 damage against ships;University;Castle
+Masonry;150;175;0;0;50;Buildings,towers HP * 1.1, +1/+1 armor, +3 building armor;University;Castle
+Murder Holes;200;0;0;100;60;Towers and Castles minimum range removed;University;Castle
+Treadmill Crane;300;200;0;0;40;Builders work rate x 1.2  / (20% faster builders - building get built 17% faster);University;Castle
+Architecture;300;200;0;0;70;Buildings,towers HP * 1.1, +1/+1 armor, +3 building armor;University;Imperial
+Arrowslits;250;250;0;0;25;Watch tower +1 pierce attack / Guard Tower +2 pierce attack / Keep +3 pierce damage;University;Imperial
+Bombard Tower;800;400;0;0;60;Allows Bombard Tower;University;Imperial
+Chemistry;300;0;200;0;100;Burning arrows, enables gunpowder / +1 pierce damage for arrow shooting units. see extra info.;University;Imperial
+Keep;500;350;0;0;75;Upgrades Guard Tower;University;Imperial
+Siege Engineers;500;600;0;0;45;Siege weapons do 1.2 * damage vs buildings / +1 range for ranged siege;University;Imperial

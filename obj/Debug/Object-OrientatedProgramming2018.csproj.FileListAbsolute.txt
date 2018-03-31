@@ -1,0 +1,10 @@
+C:\Users\veikkolintujarvi\source\repos\Object-OrientatedProgramming2018\Object-OrientatedProgramming2018\bin\Debug\Object-OrientatedProgramming2018.exe.config
+C:\Users\veikkolintujarvi\source\repos\Object-OrientatedProgramming2018\Object-OrientatedProgramming2018\bin\Debug\Object-OrientatedProgramming2018.exe
+C:\Users\veikkolintujarvi\source\repos\Object-OrientatedProgramming2018\Object-OrientatedProgramming2018\bin\Debug\Object-OrientatedProgramming2018.pdb
+C:\Users\veikkolintujarvi\source\repos\Object-OrientatedProgramming2018\Object-OrientatedProgramming2018\obj\Debug\Object-OrientatedProgramming2018.csprojResolveAssemblyReference.cache
+C:\Users\veikkolintujarvi\source\repos\Object-OrientatedProgramming2018\Object-OrientatedProgramming2018\obj\Debug\Object_OrientatedProgramming2018.MainWindow.resources
+C:\Users\veikkolintujarvi\source\repos\Object-OrientatedProgramming2018\Object-OrientatedProgramming2018\obj\Debug\Object_OrientatedProgramming2018.Properties.Resources.resources
+C:\Users\veikkolintujarvi\source\repos\Object-OrientatedProgramming2018\Object-OrientatedProgramming2018\obj\Debug\Object-OrientatedProgramming2018.csproj.GenerateResource.Cache
+C:\Users\veikkolintujarvi\source\repos\Object-OrientatedProgramming2018\Object-OrientatedProgramming2018\obj\Debug\Object-OrientatedProgramming2018.csproj.CoreCompileInputs.cache
+C:\Users\veikkolintujarvi\source\repos\Object-OrientatedProgramming2018\Object-OrientatedProgramming2018\obj\Debug\Object-OrientatedProgramming2018.exe
+C:\Users\veikkolintujarvi\source\repos\Object-OrientatedProgramming2018\Object-OrientatedProgramming2018\obj\Debug\Object-OrientatedProgramming2018.pdb
