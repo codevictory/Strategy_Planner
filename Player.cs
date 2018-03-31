@@ -77,100 +77,252 @@ namespace Object_OrientatedProgramming2018
             return base.GetHashCode();
         }
 
-        public void LineModify(int list, List<string> items, string field, string value)
+        private class LineValue
+        {
+            private string str_value;
+            private int int_value;
+            private uint uint_value;
+            private double dbl_value;
+
+            public LineValue(string value)
+            {
+                this.str_value = value;
+                this.int_value = 0;
+                this.uint_value = 0;
+                this.dbl_value = 0;
+            }
+
+            public LineValue(int value)
+            {
+                this.str_value = null;
+                this.int_value = value;
+                this.uint_value = 0;
+                this.dbl_value = 0;
+            }
+
+            public LineValue(uint value)
+            {
+                this.str_value = null;
+                this.int_value = 0;
+                this.uint_value = value;
+                this.dbl_value = 0;
+            }
+
+            public LineValue(double value)
+            {
+                this.str_value = null;
+                this.int_value = 0;
+                this.uint_value = 0;
+                this.dbl_value = value;
+            }
+
+            public string Str_value { get => str_value; }
+            public int Int_value { get => int_value; }
+            public uint Uint_value { get => uint_value; }
+            public double Dbl_value { get => dbl_value; }
+        }
+
+        private void LineModify(string list, List<string> items, string field, LineValue value)
         {
             switch (list)
             {
-                case 0:
+                case "units":
                     foreach (string item in items)
                     {
                         switch (field)
                         {
                             case "name":
-                                units.Single(n => n.Name == item).Name = value;
+                                units.Single(n => n.Name == item).Name = value.Str_value;
                                 break;
                             case "food":
-                                units.Single(n => n.Name == item).Food = value;
+                                units.Single(n => n.Name == item).Food = value.Uint_value;
                                 break;
                             case "wood":
-                                units.Single(n => n.Name == item).Wood = value;
+                                units.Single(n => n.Name == item).Wood = value.Uint_value;
                                 break;
                             case "gold":
-                                units.Single(n => n.Name == item).Gold = value;
+                                units.Single(n => n.Name == item).Gold = value.Uint_value;
                                 break;
                             case "stone":
-                                units.Single(n => n.Name == item).Stone = value;
+                                units.Single(n => n.Name == item).Stone = value.Uint_value;
                                 break;
                             case "build_time":
-                                units.Single(n => n.Name == item).Build_time = value;
+                                units.Single(n => n.Name == item).Build_time = value.Uint_value;
                                 break;
                             case "reload_time":
-                                units.Single(n => n.Name == item).Reload_time = value;
+                                units.Single(n => n.Name == item).Reload_time = value.Dbl_value;
                                 break;
                             case "attack_delay":
-                                units.Single(n => n.Name == item).Attack_delay = value;
+                                units.Single(n => n.Name == item).Attack_delay = value.Dbl_value;
                                 break;
                             case "movement_rate":
-                                units.Single(n => n.Name == item).Movement_rate = value;
+                                units.Single(n => n.Name == item).Movement_rate = value.Dbl_value;
                                 break;
                             case "line_of_sight":
-                                units.Single(n => n.Name == item).Line_of_sight = value;
+                                units.Single(n => n.Name == item).Line_of_sight = value.Uint_value;
                                 break;
-                            case "init_health_pos":
-                                units.Single(n => n.Name == item).Init_health_points = value;
+                            case "init_health_points":
+                                units.Single(n => n.Name == item).Init_health_points = value.Uint_value;
                                 break;
-                            case "health_pos":
-                                units.Single(n => n.Name == item).Health_points = value;
+                            case "health_points":
+                                units.Single(n => n.Name == item).Health_points = value.Int_value;
                                 break;
                             case "min_range":
-                                units.Single(n => n.Name == item).Min_range = value;
+                                units.Single(n => n.Name == item).Min_range = value.Dbl_value;
                                 break;
                             case "max_range":
-                                units.Single(n => n.Name == item).Max_range = value;
+                                units.Single(n => n.Name == item).Max_range = value.Dbl_value;
                                 break;
                             case "attack":
-                                units.Single(n => n.Name == item).Attack = value;
+                                units.Single(n => n.Name == item).Attack = value.Uint_value;
                                 break;
                             case "add_attack":
-                                units.Single(n => n.Name == item).Add_attack = value;
+                                units.Single(n => n.Name == item).Add_attack = value.Uint_value;
                                 break;
                             case "melee_armor":
-                                units.Single(n => n.Name == item).Melee_armor = value;
+                                units.Single(n => n.Name == item).Melee_armor = value.Int_value;
                                 break;
                             case "add_melee_armor":
-                                units.Single(n => n.Name == item).Add_melee_armor = value;
+                                units.Single(n => n.Name == item).Add_melee_armor = value.Int_value;
                                 break;
                             case "pierce_armor":
-                                units.Single(n => n.Name == item).Pierce_armor = value;
+                                units.Single(n => n.Name == item).Pierce_armor = value.Int_value;
                                 break;
                             case "add_pierce_armor":
-                                units.Single(n => n.Name == item).Add_pierce_armor = value;
+                                units.Single(n => n.Name == item).Add_pierce_armor = value.Int_value;
                                 break;
                             case "building":
-                                units.Single(n => n.Name == item).Building = value;
+                                units.Single(n => n.Name == item).Building = value.Str_value;
                                 break;
                             case "age":
-                                units.Single(n => n.Name == item).Age = value;
-                                break;
-                            case "effect":
-                                units.Single(n => n.Name == item).Effect = value;
+                                units.Single(n => n.Name == item).Age = value.Str_value;
                                 break;
                             case "special":
-                                units.Single(n => n.Name == item).Special = value;
+                                units.Single(n => n.Name == item).Special = value.Str_value;
                                 break;
                             case "garrison":
-                                units.Single(n => n.Name == item).Garrison = value;
+                                units.Single(n => n.Name == item).Garrison = value.Uint_value;
                                 break;
                             case "state":
-                                units.Single(n => n.Name == item).State = value;
+                                units.Single(n => n.Name == item).State = value.Int_value;
                                 break;
                             default: break;
                         }
                     }
                     break;
-                case 1:
+                case "structures":
+                    foreach (string item in items)
+                    {
+                        switch (field)
+                        {
+                            case "name":
+                                units.Single(n => n.Name == item).Name = value.Str_value;
+                                break;
+                            case "food":
+                                units.Single(n => n.Name == item).Food = value.Uint_value;
+                                break;
+                            case "wood":
+                                units.Single(n => n.Name == item).Wood = value.Uint_value;
+                                break;
+                            case "gold":
+                                units.Single(n => n.Name == item).Gold = value.Uint_value;
+                                break;
+                            case "stone":
+                                units.Single(n => n.Name == item).Stone = value.Uint_value;
+                                break;
+                            case "build_time":
+                                units.Single(n => n.Name == item).Build_time = value.Uint_value;
+                                break;
+                            case "reload_time":
+                                units.Single(n => n.Name == item).Reload_time = value.Dbl_value;
+                                break;
+                            case "line_of_sight":
+                                units.Single(n => n.Name == item).Line_of_sight = value.Uint_value;
+                                break;
+                            case "init_health_points":
+                                units.Single(n => n.Name == item).Init_health_points = value.Uint_value;
+                                break;
+                            case "health_points":
+                                units.Single(n => n.Name == item).Health_points = value.Int_value;
+                                break;
+                            case "min_range":
+                                units.Single(n => n.Name == item).Min_range = value.Dbl_value;
+                                break;
+                            case "max_range":
+                                units.Single(n => n.Name == item).Max_range = value.Dbl_value;
+                                break;
+                            case "attack":
+                                units.Single(n => n.Name == item).Attack = value.Uint_value;
+                                break;
+                            case "add_attack":
+                                units.Single(n => n.Name == item).Add_attack = value.Uint_value;
+                                break;
+                            case "melee_armor":
+                                units.Single(n => n.Name == item).Melee_armor = value.Int_value;
+                                break;
+                            case "add_melee_armor":
+                                units.Single(n => n.Name == item).Add_melee_armor = value.Int_value;
+                                break;
+                            case "pierce_armor":
+                                units.Single(n => n.Name == item).Pierce_armor = value.Int_value;
+                                break;
+                            case "add_pierce_armor":
+                                units.Single(n => n.Name == item).Add_pierce_armor = value.Int_value;
+                                break;
+                            case "age":
+                                units.Single(n => n.Name == item).Age = value.Str_value;
+                                break;
+                            case "special":
+                                units.Single(n => n.Name == item).Special = value.Str_value;
+                                break;
+                            case "garrison":
+                                units.Single(n => n.Name == item).Garrison = value.Uint_value;
+                                break;
+                            case "state":
+                                units.Single(n => n.Name == item).State = value.Int_value;
+                                break;
+                            default: break;
+                        }
+                    }
                     break;
-                case 2:
+                case "techs":
+                    foreach (string item in items)
+                    {
+                        switch (field)
+                        {
+                            case "name":
+                                units.Single(n => n.Name == item).Name = value.Str_value;
+                                break;
+                            case "food":
+                                units.Single(n => n.Name == item).Food = value.Uint_value;
+                                break;
+                            case "wood":
+                                units.Single(n => n.Name == item).Wood = value.Uint_value;
+                                break;
+                            case "gold":
+                                units.Single(n => n.Name == item).Gold = value.Uint_value;
+                                break;
+                            case "stone":
+                                units.Single(n => n.Name == item).Stone = value.Uint_value;
+                                break;
+                            case "build_time":
+                                units.Single(n => n.Name == item).Build_time = value.Uint_value;
+                                break;
+                            case "building":
+                                units.Single(n => n.Name == item).Building = value.Str_value;
+                                break;
+                            case "age":
+                                units.Single(n => n.Name == item).Age = value.Str_value;
+                                break;
+                            case "effect":
+                                units.Single(n => n.Name == item).Effect = value.Str_value;
+                                break;
+                            case "state":
+                                units.Single(n => n.Name == item).State = value.Int_value;
+                                break;
+                            default: break;
+                        }
+                    }
                     break;
                 default: break;
             }

@@ -19,7 +19,7 @@ namespace Object_OrientatedProgramming2018
         private double movement_rate;
         private uint line_of_sight;
         private uint init_health_points;
-        private uint health_points;
+        private int health_points;
         private double min_range;
         private double max_range;
         private uint attack;
@@ -46,7 +46,7 @@ namespace Object_OrientatedProgramming2018
         public double Movement_rate { get => movement_rate; set => movement_rate = value; }
         public uint Line_of_sight { get => line_of_sight; set => line_of_sight = value; }
         public uint Init_health_points { get => init_health_points; set => init_health_points = value; }
-        public uint Health_points { get => health_points; set => health_points = value; }
+        public int Health_points { get => health_points; set => health_points = value; }
         public double Min_range { get => min_range; set => min_range = value; }
         public double Max_range { get => max_range; set => max_range = value; }
         public uint Attack { get => attack; set => attack = value; }
@@ -63,7 +63,9 @@ namespace Object_OrientatedProgramming2018
         public int State { get => state; set => state = value; } // private enum ItemState { unavailable, available, bought };
 
         //Constructor for units
-        public Item(string name, uint food, uint wood, uint gold, uint stone, uint build_time, double reload_time, double attack_delay, double movement_rate, uint line_of_sight, uint init_health_points, double min_range, double max_range, uint attack, int melee_armor, int pierce_armor, string building, string age, string special)
+        public Item(string name, uint food, uint wood, uint gold, uint stone, uint build_time, double reload_time, double attack_delay, 
+            double movement_rate, uint line_of_sight, uint init_health_points, double min_range, double max_range, uint attack, 
+            int melee_armor, int pierce_armor, string building, string age, string special)
         {
             this.name = name ?? throw new ArgumentNullException(nameof(name));
             this.food = food;
@@ -84,15 +86,16 @@ namespace Object_OrientatedProgramming2018
             this.building = building ?? throw new ArgumentNullException(nameof(building));
             this.age = age ?? throw new ArgumentNullException(nameof(age));
             this.special = special ?? throw new ArgumentNullException(nameof(special));
-            health_points = init_health_points;
+            health_points = (int)init_health_points;
             add_attack = 0;
             add_melee_armor = 0;
             add_pierce_armor = 0;
-            state = (int)ItemState.unavailable;
+            state = 0; //unavailable
         }
 
         //Constructor for techs
-        public Item(string name, uint food, uint wood, uint gold, uint stone, uint build_time, string effect, string building, string age)
+        public Item(string name, uint food, uint wood, uint gold, uint stone, uint build_time, string effect, string building, 
+            string age)
         {
             this.name = name ?? throw new ArgumentNullException(nameof(name));
             this.effect = effect ?? throw new ArgumentNullException(nameof(effect));
@@ -103,10 +106,13 @@ namespace Object_OrientatedProgramming2018
             this.gold = gold;
             this.stone = stone;
             this.build_time = build_time;
+            state = 0; //unavailable
         }
 
         //Constructor for structures
-        public Item(string name, uint food, uint wood, uint gold, uint stone, uint build_time, double reload_time, uint line_of_sight, uint init_health_points, uint attack, int melee_armor, int pierce_armor, uint garrison, string special, string age)
+        public Item(string name, uint food, uint wood, uint gold, uint stone, uint build_time, double reload_time, uint line_of_sight, 
+            uint init_health_points, double min_range, double max_range, uint attack, int melee_armor, int pierce_armor, uint garrison, 
+            string special, string age)
         {
             this.name = name ?? throw new ArgumentNullException(nameof(name));
             this.special = special ?? throw new ArgumentNullException(nameof(special));
@@ -119,11 +125,17 @@ namespace Object_OrientatedProgramming2018
             this.reload_time = reload_time;
             this.line_of_sight = line_of_sight;
             this.init_health_points = init_health_points;
+            this.min_range = min_range;
+            this.max_range = max_range;
             this.attack = attack;
             this.melee_armor = melee_armor;
             this.pierce_armor = pierce_armor;
             this.garrison = garrison;
-            health_points = init_health_points;
+            health_points = (int)init_health_points;
+            add_attack = 0;
+            add_melee_armor = 0;
+            add_pierce_armor = 0;
+            state = 0; //unavailable
         }
 
         public override string ToString()
