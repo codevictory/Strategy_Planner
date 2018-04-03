@@ -329,6 +329,7 @@ namespace Object_OrientatedProgramming2018
 
         }
 
+        //old version of the method, LineModify() not implemented yet
         public void TechModify(string tech)
         {
             switch (tech)
