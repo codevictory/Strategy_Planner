@@ -1,0 +1,31 @@
+Name;Food;Wood;Gold;Stone;Build Time;Reload Time;LOS;HP;MinRange;MaxRange;Attack;Melee armor;Pierce armor;Garrison;Special;Age
+Barracks;0;175;0;0;50;0;5;1200;0;0;0;0;7;10;-;Dark
+Dock;0;150;0;0;35;0;5;1800;0;0;0;0;7;10;-;Dark
+Farm;0;60;0;0;15;0;0;480;0;0;0;0;0;0;Standard=175F / Horse Collar=25F / Heavy Plow=375F / Crop Rotation=55F;Dark
+Fish Trap;0;100;0;0;40;0;1;50;0;0;0;0;0;0;715 food;Dark
+House;0;25;0;0;25;0;1;550;0;0;0;0;7;0;Supports 5 population;Dark
+Lumber Camp;0;100;0;0;35;0;5;600;0;0;0;0;7;0;-;Dark
+Mill;0;100;0;0;35;0;5;600;0;0;0;0;7;0;Max 4 farms queued;Dark
+Mining Camp;0;100;0;0;35;0;5;600;0;0;0;0;7;0;-;Dark
+Town Center;0;275;0;100;150;2;7;2400;0;6;5;3;5;15;supports 5 population, max 1 arrows / +5 vs all buildings, +5 vs ships, +1 vs camels;Castle
+Outpost;0;25;0;5;15;0;6;500;0;0;0;0;0;0; +2 LOS per;Dark
+Palisade Gate;0;20;0;0;30;0;6;400;0;0;0;2;2;0;-;Dark
+Palisade Wall;0;2;0;0;6;0;2;250;0;0;0;2;5;0;-;Dark
+Archery Range;0;175;0;0;50;0;5;1500;0;0;0;1;8;10;-;Feudal
+Blacksmith;0;150;0;0;40;0;5;1800;0;0;0;1;8;0;-;Feudal
+Market;0;175;0;0;60;0;4;1800;0;0;0;1;8;0;-;Feudal
+Stable;0;175;0;0;50;0;5;1500;0;0;0;1;8;10;-;Feudal
+Gate;0;0;0;30;70;0;6;1375;0;0;0;6;6;0;+125 HP with Fortified Wall;Feudal
+Stone Wall;0;0;0;5;10;0;2;900;0;0;0;8;10;0;-;Feudal
+Watch Tower;0;25;0;125;80;2;10;1020;1;8;5;1;7;5;max 5 arrows, +2 vs spearmen line, +7 damage vs ships, +1 vs camels;Feudal
+Castle;0;0;0;650;200;2;11;4800;1;8;11;8;11;20;support 2 population, max 21 arrows / 1st arrow +2 against spearmen / From 2nd arrow +11 damage vs ships, +11 vs stone defense, +1 damage to camels;Castle
+Harbor;0;150;0;0;35;3;20;2000;0;7;9;3;10;0;Malay unique tech. Fires arrows. LOS actually 1, but thanks to malay bonus it's 2. +13 attack vs ships. Also classified as stone defense. The 3 extra arrows only deal 1 damage each.;Castle
+Monastery;0;175;0;0;40;0;5;2100;0;0;0;2;9;10;-;Castle
+Siege Workshop;0;200;0;0;40;0;4;2100;0;0;0;2;9;10;-;Castle
+University;0;200;0;0;60;0;4;2100;0;0;0;2;9;0;-;Castle
+Fortified Wall;0;0;0;5;10;0;2;3000;0;0;0;12;12;0;-;Castle
+Guard Tower;0;25;0;125;80;2;10;1500;1;8;7;2;8;5;max 5 arrows, +2 vs spearmen line, +9 damage vs ships, +1 vs camels;Castle
+Feitoria;0;0;250;250;120;0;6;5200;0;0;0;3;10;0;Takes 2 population / Generates 0.8W 0.8F 0.45G 0.25S per second;Imperial
+Wonder;0;1000;1000;1000;3503;0;6;4800;0;0;0;3;10;0;-;Imperial
+Bombard Tower;0;0;100;125;80;6;10;2220;1;8;120;3;9;5; +4 damage vs ships, +1 vs camels, pierce attack;Imperial
+Keep;0;25;0;125;80;2;10;2250;1;8;8;3;9;5;max 5 arrows, +2 vs spearmen line, +1 damage vs ships, +1 vs camels;Imperial
