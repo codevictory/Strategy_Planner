@@ -9,63 +9,63 @@ namespace Object_OrientatedProgramming2018
     class Item
     {
         private string name;
-        private uint food;
-        private uint wood;
-        private uint gold;
-        private uint stone;
-        private uint build_time;
-        private double reload_time;
-        private double attack_delay;
-        private double movement_rate;
-        private uint line_of_sight;
-        private uint init_health_points;
-        private int health_points;
-        private double min_range;
-        private double max_range;
-        private uint attack;
-        private uint add_attack;
-        private int melee_armor;
-        private int add_melee_armor;
-        private int pierce_armor;
-        private int add_pierce_armor;
+        private decimal food;
+        private decimal wood;
+        private decimal gold;
+        private decimal stone;
+        private decimal build_time;
+        private decimal reload_time;
+        private decimal attack_delay;
+        private decimal movement_rate;
+        private decimal line_of_sight;
+        private decimal init_health_points;
+        private decimal health_points;
+        private decimal min_range;
+        private decimal max_range;
+        private decimal attack;
+        private decimal add_attack;
+        private decimal melee_armor;
+        private decimal add_melee_armor;
+        private decimal pierce_armor;
+        private decimal add_pierce_armor;
         private string building;
         private string age;
         private string effect;
         private string special;
-        private uint garrison;
-        private int state;
+        private decimal garrison;
+        private decimal state;
 
         public string Name { get => name; set => name = value; }
-        public uint Food { get => food; set => food = value; }
-        public uint Wood { get => wood; set => wood = value; }
-        public uint Gold { get => gold; set => gold = value; }
-        public uint Stone { get => stone; set => stone = value; }
-        public uint Build_time { get => build_time; set => build_time = value; }
-        public double Reload_time { get => reload_time; set => reload_time = value; }
-        public double Attack_delay { get => attack_delay; set => attack_delay = value; }
-        public double Movement_rate { get => movement_rate; set => movement_rate = value; }
-        public uint Line_of_sight { get => line_of_sight; set => line_of_sight = value; }
-        public uint Init_health_points { get => init_health_points; set => init_health_points = value; }
-        public int Health_points { get => health_points; set => health_points = value; }
-        public double Min_range { get => min_range; set => min_range = value; }
-        public double Max_range { get => max_range; set => max_range = value; }
-        public uint Attack { get => attack; set => attack = value; }
-        public uint Add_attack { get => add_attack; set => add_attack = value; }
-        public int Melee_armor { get => melee_armor; set => melee_armor = value; }
-        public int Add_melee_armor { get => add_melee_armor; set => add_melee_armor = value; }
-        public int Pierce_armor { get => pierce_armor; set => pierce_armor = value; }
-        public int Add_pierce_armor { get => add_pierce_armor; set => add_pierce_armor = value; }
+        public decimal Food { get => food; set => food = value; }
+        public decimal Wood { get => wood; set => wood = value; }
+        public decimal Gold { get => gold; set => gold = value; }
+        public decimal Stone { get => stone; set => stone = value; }
+        public decimal Build_time { get => build_time; set => build_time = value; }
+        public decimal Reload_time { get => reload_time; set => reload_time = value; }
+        public decimal Attack_delay { get => attack_delay; set => attack_delay = value; }
+        public decimal Movement_rate { get => movement_rate; set => movement_rate = value; }
+        public decimal Line_of_sight { get => line_of_sight; set => line_of_sight = value; }
+        public decimal Init_health_points { get => init_health_points; set => init_health_points = value; }
+        public decimal Health_points { get => health_points; set => health_points = value; }
+        public decimal Min_range { get => min_range; set => min_range = value; }
+        public decimal Max_range { get => max_range; set => max_range = value; }
+        public decimal Attack { get => attack; set => attack = value; }
+        public decimal Add_attack { get => add_attack; set => add_attack = value; }
+        public decimal Melee_armor { get => melee_armor; set => melee_armor = value; }
+        public decimal Add_melee_armor { get => add_melee_armor; set => add_melee_armor = value; }
+        public decimal Pierce_armor { get => pierce_armor; set => pierce_armor = value; }
+        public decimal Add_pierce_armor { get => add_pierce_armor; set => add_pierce_armor = value; }
         public string Building { get => building; set => building = value; }
         public string Age { get => age; set => age = value; }
         public string Effect { get => effect; set => effect = value; }
         public string Special { get => special; set => special = value; }
-        public uint Garrison { get => garrison; set => garrison = value; }
-        public int State { get => state; set => state = value; } // private enum ItemState { unavailable, available, bought };
+        public decimal Garrison { get => garrison; set => garrison = value; }
+        public decimal State { get => state; set => state = value; } // private enum ItemState { unavailable, available, bought };
 
         //Constructor for units
-        public Item(string name, uint food, uint wood, uint gold, uint stone, uint build_time, double reload_time, double attack_delay, 
-            double movement_rate, uint line_of_sight, uint init_health_points, double min_range, double max_range, uint attack, 
-            int melee_armor, int pierce_armor, string building, string age, string special)
+        public Item(string name, decimal food, decimal wood, decimal gold, decimal stone, decimal build_time, decimal reload_time, decimal attack_delay, 
+            decimal movement_rate, decimal line_of_sight, decimal init_health_points, decimal min_range, decimal max_range, decimal attack, 
+            decimal melee_armor, decimal pierce_armor, string building, string age, string special)
         {
             this.name = name ?? throw new ArgumentNullException(nameof(name));
             this.food = food;
@@ -94,7 +94,7 @@ namespace Object_OrientatedProgramming2018
         }
 
         //Constructor for techs
-        public Item(string name, uint food, uint wood, uint gold, uint stone, uint build_time, string effect, string building, 
+        public Item(string name, decimal food, decimal wood, decimal gold, decimal stone, decimal build_time, string effect, string building, 
             string age)
         {
             this.name = name ?? throw new ArgumentNullException(nameof(name));
@@ -110,8 +110,8 @@ namespace Object_OrientatedProgramming2018
         }
 
         //Constructor for structures
-        public Item(string name, uint food, uint wood, uint gold, uint stone, uint build_time, double reload_time, uint line_of_sight, 
-            uint init_health_points, double min_range, double max_range, uint attack, int melee_armor, int pierce_armor, uint garrison, 
+        public Item(string name, decimal food, decimal wood, decimal gold, decimal stone, decimal build_time, decimal reload_time, decimal line_of_sight, 
+            decimal init_health_points, decimal min_range, decimal max_range, decimal attack, decimal melee_armor, decimal pierce_armor, decimal garrison, 
             string special, string age)
         {
             this.name = name ?? throw new ArgumentNullException(nameof(name));
@@ -131,7 +131,7 @@ namespace Object_OrientatedProgramming2018
             this.melee_armor = melee_armor;
             this.pierce_armor = pierce_armor;
             this.garrison = garrison;
-            health_points = (int)init_health_points;
+            health_points = init_health_points;
             add_attack = 0;
             add_melee_armor = 0;
             add_pierce_armor = 0;
