@@ -36,7 +36,7 @@ namespace Object_OrientatedProgramming2018
         private decimal state;
         private string attack_bonus;
         private string armor_bonus;
-        private string unit_type;
+        private string unit_type; //infantry, archer, cavalry archer, cavalry, gunbowder unit, siege unit, civilian
 
         public string Name { get => name; set => name = value; }
         public decimal Food { get => food; set => food = value; }
@@ -71,7 +71,7 @@ namespace Object_OrientatedProgramming2018
         //Constructor for units
         public Item(string name, decimal food, decimal wood, decimal gold, decimal stone, decimal build_time, decimal reload_time, decimal attack_delay, 
             decimal movement_rate, decimal line_of_sight, decimal init_health_points, decimal min_range, decimal max_range, decimal attack, 
-            decimal melee_armor, decimal pierce_armor, string building, string age, string special, string attack_bonus, string armor_bonus, string unit_type)
+            decimal melee_armor, decimal pierce_armor, decimal garrison, string building, string age, string special, string attack_bonus, string armor_bonus, string unit_type)
         {
             this.name = name ?? throw new ArgumentNullException(nameof(name));
             this.food = food;
@@ -89,6 +89,7 @@ namespace Object_OrientatedProgramming2018
             this.attack = attack;
             this.melee_armor = melee_armor;
             this.pierce_armor = pierce_armor;
+            this.garrison = garrison;
             this.building = building ?? throw new ArgumentNullException(nameof(building));
             this.age = age ?? throw new ArgumentNullException(nameof(age));
             this.special = special ?? throw new ArgumentNullException(nameof(special));
