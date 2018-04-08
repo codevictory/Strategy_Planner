@@ -34,6 +34,9 @@ namespace Object_OrientatedProgramming2018
         private string special;
         private decimal garrison;
         private decimal state;
+        private string attack_bonus;
+        private string armor_bonus;
+        private string unit_type;
 
         public string Name { get => name; set => name = value; }
         public decimal Food { get => food; set => food = value; }
@@ -61,11 +64,14 @@ namespace Object_OrientatedProgramming2018
         public string Special { get => special; set => special = value; }
         public decimal Garrison { get => garrison; set => garrison = value; }
         public decimal State { get => state; set => state = value; } // private enum ItemState { unavailable, available, bought };
+        public string Attack_bonus { get => attack_bonus; set => attack_bonus = value; }
+        public string Armor_bonus { get => armor_bonus; set => armor_bonus = value; }
+        public string Unit_type { get => unit_type; set => unit_type = value; }
 
         //Constructor for units
         public Item(string name, decimal food, decimal wood, decimal gold, decimal stone, decimal build_time, decimal reload_time, decimal attack_delay, 
             decimal movement_rate, decimal line_of_sight, decimal init_health_points, decimal min_range, decimal max_range, decimal attack, 
-            decimal melee_armor, decimal pierce_armor, string building, string age, string special)
+            decimal melee_armor, decimal pierce_armor, string building, string age, string special, string attack_bonus, string armor_bonus, string unit_type)
         {
             this.name = name ?? throw new ArgumentNullException(nameof(name));
             this.food = food;
@@ -86,6 +92,9 @@ namespace Object_OrientatedProgramming2018
             this.building = building ?? throw new ArgumentNullException(nameof(building));
             this.age = age ?? throw new ArgumentNullException(nameof(age));
             this.special = special ?? throw new ArgumentNullException(nameof(special));
+            this.attack_bonus = attack_bonus ?? throw new ArgumentNullException(nameof(attack_bonus));
+            this.armor_bonus = armor_bonus ?? throw new ArgumentNullException(nameof(armor_bonus));
+            this.unit_type = unit_type ?? throw new ArgumentNullException(nameof(unit_type));
             health_points = (int)init_health_points;
             add_attack = 0;
             add_melee_armor = 0;
