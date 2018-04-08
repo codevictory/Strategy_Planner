@@ -15,3 +15,6 @@ C:\Users\veikkolintujarvi\Documents\StrategyPlanner\Git\Strategy_Planner\obj\Deb
 C:\Users\veikkolintujarvi\Documents\StrategyPlanner\Git\Strategy_Planner\obj\Debug\Object-OrientatedProgramming2018.csproj.CoreCompileInputs.cache
 C:\Users\veikkolintujarvi\Documents\StrategyPlanner\Git\Strategy_Planner\obj\Debug\Object-OrientatedProgramming2018.exe
 C:\Users\veikkolintujarvi\Documents\StrategyPlanner\Git\Strategy_Planner\obj\Debug\Object-OrientatedProgramming2018.pdb
+C:\Users\veikkolintujarvi\Documents\StrategyPlanner\Git\Strategy_Planner\bin\Debug\Object-OrientatedProgramming2018.exe.config
+C:\Users\veikkolintujarvi\Documents\StrategyPlanner\Git\Strategy_Planner\bin\Debug\Object-OrientatedProgramming2018.exe
+C:\Users\veikkolintujarvi\Documents\StrategyPlanner\Git\Strategy_Planner\bin\Debug\Object-OrientatedProgramming2018.pdb
