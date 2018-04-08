@@ -62,7 +62,7 @@ namespace Object_OrientatedProgramming2018
         public int Game_time { get => game_time; set => game_time = value; }
 
         public void InitPlayer(int number, string color, string civ, int food, int wood, int gold, int stone, 
-            float population, uint poplimit)
+            decimal population, uint poplimit)
         {
             Player player = new Player(number, color, civ, food, wood, gold, stone, population, poplimit, 
                 units, structures, techs);
@@ -79,7 +79,6 @@ namespace Object_OrientatedProgramming2018
 
             var civ_reader = new StreamReader(@"InitData\civilizations.csv");
 
-
             civ_reader.ReadLine();
 
             while (!civ_reader.EndOfStream)
@@ -87,7 +86,13 @@ namespace Object_OrientatedProgramming2018
                 var line = civ_reader.ReadLine();
                 var values = line.Split(';');
 
-                Civilization civ = new Civilization(values[0], values[1], values[2], values[3], values[4], values[5]);
+                Civilization civ = new Civilization(
+                    values[0], //string name 
+                    values[1], //string type
+                    values[2], //string uniq_units
+                    values[3], //string uniq_techs
+                    values[4], //string team_bonus
+                    values[5]);//string civ_bonus
 
                 civilizations.Add(civ);
             }
@@ -102,14 +107,26 @@ namespace Object_OrientatedProgramming2018
             {
                 var line = structure_reader.ReadLine();
                 var values = line.Split(';');
-                Item structure = new Item(values[0], Convert.ToUInt32(values[1]), Convert.ToUInt32(values[2]), 
-                    Convert.ToUInt32(values[3]), Convert.ToUInt32(values[4]), Convert.ToUInt32(values[5]), 
-                    Convert.ToUInt32(values[6]), Convert.ToUInt32(values[7]), Convert.ToUInt32(values[8]), 
-                    Convert.ToUInt32(values[9]), Convert.ToInt32(values[10]), Convert.ToInt32(values[11]), 
-                    Convert.ToUInt32(values[12]), values[13], values[14]);
+                Item structure = new Item(
+                    values[0],                      //string name
+                    Convert.ToDecimal(values[1], CultureInfo.InvariantCulture.NumberFormat),    //decimal food
+                    Convert.ToDecimal(values[2], CultureInfo.InvariantCulture.NumberFormat),    //decimal wood
+                    Convert.ToDecimal(values[3], CultureInfo.InvariantCulture.NumberFormat),    //decimal gold
+                    Convert.ToDecimal(values[4], CultureInfo.InvariantCulture.NumberFormat),    //decimal stone
+                    Convert.ToDecimal(values[5], CultureInfo.InvariantCulture.NumberFormat),    //decimal build_time
+                    Convert.ToDecimal(values[6], CultureInfo.InvariantCulture.NumberFormat),    //double reload_time
+                    Convert.ToDecimal(values[7], CultureInfo.InvariantCulture.NumberFormat),    //decimal line_of_sight
+                    Convert.ToDecimal(values[8], CultureInfo.InvariantCulture.NumberFormat),    //decimal init_health_points
+                    Convert.ToDecimal(values[9], CultureInfo.InvariantCulture.NumberFormat),    //double min_range
+                    Convert.ToDecimal(values[10], CultureInfo.InvariantCulture.NumberFormat),   //double max_range
+                    Convert.ToDecimal(values[11], CultureInfo.InvariantCulture.NumberFormat),   //decimal attack
+                    Convert.ToDecimal(values[12], CultureInfo.InvariantCulture.NumberFormat),    //decimal melee_armor
+                    Convert.ToDecimal(values[13], CultureInfo.InvariantCulture.NumberFormat),    //decimal pierce_armor
+                    Convert.ToDecimal(values[14], CultureInfo.InvariantCulture.NumberFormat),   //decimal garrison
+                    values[15],                     //string special
+                    values[16]);                    //string age
                 structures.Add(structure);
             }
-
             structure_reader.Close();
 
             var tech_reader = new StreamReader(@"InitData\techs.csv");
@@ -120,12 +137,18 @@ namespace Object_OrientatedProgramming2018
             {
                 var line = tech_reader.ReadLine();
                 var values = line.Split(';');
-                Item tech = new Item(values[0], Convert.ToUInt32(values[1]), Convert.ToUInt32(values[2]), 
-                    Convert.ToUInt32(values[3]), Convert.ToUInt32(values[4]), Convert.ToUInt32(values[5]), 
-                    values[6], values[7], values[8]);
+                Item tech = new Item(
+                    values[0],                      //string name
+                    Convert.ToDecimal(values[1], CultureInfo.InvariantCulture.NumberFormat),    //decimal food
+                    Convert.ToDecimal(values[2], CultureInfo.InvariantCulture.NumberFormat),    //decimal wood
+                    Convert.ToDecimal(values[3], CultureInfo.InvariantCulture.NumberFormat),    //decimal gold
+                    Convert.ToDecimal(values[4], CultureInfo.InvariantCulture.NumberFormat),    //decimal stone
+                    Convert.ToDecimal(values[5], CultureInfo.InvariantCulture.NumberFormat),    //decimal build_time
+                    values[6],                      //string effect
+                    values[7],                      //string building
+                    values[8]);                     //string age
 
                 techs.Add(tech);
-                
             }
 
             tech_reader.Close();
@@ -138,17 +161,32 @@ namespace Object_OrientatedProgramming2018
             {
                 var line = unit_reader.ReadLine();
                 var values = line.Split(';');
-                Item unit = new Item(values[0], Convert.ToUInt32(values[1]), Convert.ToUInt32(values[2]), 
-                    Convert.ToUInt32(values[3]), Convert.ToUInt32(values[4]), Convert.ToUInt32(values[5]), 
-                    float.Parse(values[6], CultureInfo.InvariantCulture.NumberFormat), float.Parse(values[7], 
-                    CultureInfo.InvariantCulture.NumberFormat), float.Parse(values[8], 
-                    CultureInfo.InvariantCulture.NumberFormat), Convert.ToUInt32(values[9]), 
-                    Convert.ToUInt32(values[10]), float.Parse(values[11], CultureInfo.InvariantCulture.NumberFormat), 
-                    float.Parse(values[12], CultureInfo.InvariantCulture.NumberFormat), Convert.ToUInt32(values[13]), 
-                    Convert.ToInt32(values[14]), Convert.ToInt32(values[15]), values[16], values[17], values[18]);
-
+                Item unit = new Item(
+                    values[0],                      //string name
+                    Convert.ToDecimal(values[1], CultureInfo.InvariantCulture.NumberFormat),    //decimal food
+                    Convert.ToDecimal(values[2], CultureInfo.InvariantCulture.NumberFormat),    //decimal wood
+                    Convert.ToDecimal(values[3], CultureInfo.InvariantCulture.NumberFormat),    //decimal gold
+                    Convert.ToDecimal(values[4], CultureInfo.InvariantCulture.NumberFormat),    //decimal stone
+                    Convert.ToDecimal(values[5], CultureInfo.InvariantCulture.NumberFormat),    //decimal build_time
+                    Convert.ToDecimal(values[6], CultureInfo.InvariantCulture.NumberFormat), //decimal reload_time
+                    Convert.ToDecimal(values[7], CultureInfo.InvariantCulture.NumberFormat), //decimal attack_delay
+                    Convert.ToDecimal(values[8], CultureInfo.InvariantCulture.NumberFormat), //decimal movement_rate
+                    Convert.ToDecimal(values[9], CultureInfo.InvariantCulture.NumberFormat),    //decimal line_of_sight
+                    Convert.ToDecimal(values[10], CultureInfo.InvariantCulture.NumberFormat),   //decimal init_health_points
+                    Convert.ToDecimal(values[11], CultureInfo.InvariantCulture.NumberFormat),    //decimal min_range
+                    Convert.ToDecimal(values[12], CultureInfo.InvariantCulture.NumberFormat),    //decimal max_range
+                    Convert.ToDecimal(values[13], CultureInfo.InvariantCulture.NumberFormat),   //decimal attack
+                    Convert.ToDecimal(values[14], CultureInfo.InvariantCulture.NumberFormat),    //decimal melee_armor
+                    Convert.ToDecimal(values[15], CultureInfo.InvariantCulture.NumberFormat),    //decimal pierce_armor
+                    Convert.ToDecimal(values[16], CultureInfo.InvariantCulture.NumberFormat),    //decimal garrison
+                    values[17],                     //string building
+                    values[18],                     //string age
+                    values[19]);                    //string special
+                    values[20]);                    //string attack_bonus
+                    values[21]);                    //string armor_bonuus
+                    values[22]);                    //string type
                 units.Add(unit);
-                
+
             }
             unit_reader.Close();
         }
