@@ -25,20 +25,22 @@ namespace Object_OrientatedProgramming2018
         {
             Game test_game = InitGame();
             test_game.InitPlayer(1, "red", "Aztecs", 100, 200, 300, 400, 5, 10);
-            test_game.GetPlayer(1).TechModify("Crossbowman");
-            test_game.GetPlayer(1).ToString();
- 
-            debugRichTextBox.AppendText(test_game.ToString());
-            debugRichTextBox.AppendText("\n\n");
+            test_game.GetPlayer(1).TechModify("Thumb Ring");
+            //test_game.GetPlayer(1).ToString();
 
-            debugRichTextBox.AppendText("\nStructures: \n");
-            debugRichTextBox.AppendText(test_game.StructuresToString());
-            debugRichTextBox.AppendText("\nUnits: \n");
-            debugRichTextBox.AppendText(test_game.UnitsToString());
-            debugRichTextBox.AppendText("\nTechs: \n");
-            debugRichTextBox.AppendText(test_game.TechsToString());
-            debugRichTextBox.AppendText("\nCivilizations: \n");
-            debugRichTextBox.AppendText(test_game.CivilizationsToString());
+            debugRichTextBox.AppendText(test_game.GetPlayer(1).Units.Single(u => u.Name == "Crossbowman").ToString());
+
+            //debugRichTextBox.AppendText(test_game.ToString());
+            //debugRichTextBox.AppendText("\n\n");
+
+            //debugRichTextBox.AppendText("\nStructures: \n");
+            //debugRichTextBox.AppendText(test_game.StructuresToString());
+            //debugRichTextBox.AppendText("\nUnits: \n");
+            //debugRichTextBox.AppendText(test_game.UnitsToString());
+            //debugRichTextBox.AppendText("\nTechs: \n");
+            //debugRichTextBox.AppendText(test_game.TechsToString());
+            //debugRichTextBox.AppendText("\nCivilizations: \n");
+            //debugRichTextBox.AppendText(test_game.CivilizationsToString());
 
             //debugRichTextBox.AppendText(test_game.ItemNamesToString());
         }
