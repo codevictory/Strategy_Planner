@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Object_OrientatedProgramming2018.Properties
+namespace StrategyPlanner.Properties
 {
 
 

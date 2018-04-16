@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Object_OrientatedProgramming2018
+namespace StrategyPlanner
 {
     static class Program
     {

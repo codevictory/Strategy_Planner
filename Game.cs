@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Object_OrientatedProgramming2018
+namespace StrategyPlanner
 {
     class Game
     {
@@ -60,6 +60,23 @@ namespace Object_OrientatedProgramming2018
         }
 
         public int Game_time { get => game_time; set => game_time = value; }
+        public string Name { get => name; set => name = value; }
+        public bool Expansions { get => expansions; set => expansions = value; }
+        public string Map_style { get => map_style; set => map_style = value; }
+        public string Location { get => location; set => location = value; }
+        public string Map_size { get => map_size; set => map_size = value; }
+        public string Difficulty { get => difficulty; set => difficulty = value; }
+        public string Resources { get => resources; set => resources = value; }
+        public uint Pop_limit { get => pop_limit; set => pop_limit = value; }
+        public string Reveal_map { get => reveal_map; set => reveal_map = value; }
+        public string Start_age { get => start_age; set => start_age = value; }
+        public string End_age { get => end_age; set => end_age = value; }
+        public string Treaty_length { get => treaty_length; set => treaty_length = value; }
+        public string Victory_condition { get => victory_condition; set => victory_condition = value; }
+        public bool Team_together { get => team_together; set => team_together = value; }
+        public bool Lock_teams { get => lock_teams; set => lock_teams = value; }
+        public bool All_tech { get => all_tech; set => all_tech = value; }
+        public int Game_time1 { get => game_time; set => game_time = value; }
 
         public void InitPlayer(int number, string color, string civ, int food, int wood, int gold, int stone, 
             decimal population, uint poplimit)
@@ -181,9 +198,9 @@ namespace Object_OrientatedProgramming2018
                     Convert.ToDecimal(values[16], CultureInfo.InvariantCulture.NumberFormat),    //decimal garrison
                     values[17],                     //string building
                     values[18],                     //string age
-                    values[19]);                    //string special
-                    values[20]);                    //string attack_bonus
-                    values[21]);                    //string armor_bonuus
+                    values[19],                    //string special
+                    values[20],                    //string attack_bonus
+                    values[21],                    //string armor_bonuus
                     values[22]);                    //string type
                 units.Add(unit);
 

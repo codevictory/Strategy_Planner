@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Object_OrientatedProgramming2018
+namespace StrategyPlanner
 {
-    class Player
+    class Player : APlayer
     {
         private int number;
         private string color;
@@ -21,9 +21,7 @@ namespace Object_OrientatedProgramming2018
 
         private enum PlayerColor { blue, red, green, yellow, cyan, violet, grey, orange };
 
-        List<Item> units = new List<Item>();
-        List<Item> structures = new List<Item>();
-        List<Item> techs = new List<Item>();
+
 
         public int Number { get => number; set => number = value; }
         public string Color { get => color; set => color = value; }
@@ -38,7 +36,7 @@ namespace Object_OrientatedProgramming2018
         internal List<Item> Structures { get => structures; set => structures = value; }
         internal List<Item> Techs { get => techs; set => techs = value; }
 
-        public Player(int number, string color, string civ, int food, int wood, int gold, int stone, decimal population, 
+        public Player(int number, string color, string civ, int food, int wood, int gold, int stone, decimal population,
             uint pop_limit, List<Item> units, List<Item> structures, List<Item> techs)
         {
             this.number = number;
@@ -899,10 +897,10 @@ namespace Object_OrientatedProgramming2018
             units.Single(u => u.Name == to).State = 1;
         }
 
-        //old version of the method, GroupModify() not implemented yet
+        //most of the implementation still missing
         public void TechModify(string tech)
         {
-            techs.Single(t => t.Name == "tech").State = 2;
+            techs.Single(t => t.Name == tech).State = 2;
             switch (tech)
             {
                 case "Crossbowman":
@@ -1255,15 +1253,22 @@ namespace Object_OrientatedProgramming2018
                     units.Single(u => u.Name == "Villager").Attack_bonus += "\n+15 attack vs buildings and stone defenses.";
                     break;
                 case "Spies":
+                    //no implementation needed
                     break;
                 case "Treason":
+                    //no implementation needed
                     break;
                 case "Careening":
                     TypeModify("ship", "add_pierce_armor", new LineValue(1m), "increase");
                     units.Single(u => u.Name == "Transport ship").Garrison += 5m;
                     break;
                 case "Gillnets":
+                    //fishing ships work rate *1.25
                 case "War Galley":
+                    UnitUpgrade("Galley", "War Galley");
+                    UnitUpgrade("Fire Galley", "Fire Ship");
+                    UnitUpgrade("Demolition Raft", "Demolition Ship");
+                    break;
                 case "Cannon Galleon":
                 case "Dry Dock":
                 case "Elite Cannon Galleon":

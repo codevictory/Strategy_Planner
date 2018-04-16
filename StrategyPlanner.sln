@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Object-OrientatedProgramming2018", "Object-OrientatedProgramming2018.csproj", "{7AA7315A-9DEC-473A-93A2-A8485F3C57E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPlanner", "StrategyPlanner.csproj", "{7AA7315A-9DEC-473A-93A2-A8485F3C57E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Object_OrientatedProgramming2018
+namespace StrategyPlanner
 {
     class Item
     {
