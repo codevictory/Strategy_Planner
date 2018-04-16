@@ -2,13 +2,25 @@
 
 namespace StrategyPlanner
 {
-    partial class PlayerPanel : APlayer
+    partial class PlayerPanel
     {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer panelContainer = null;
-        private AutoScaleMode AutoScaleMode;
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
         #region Component Designer generated code
 
@@ -18,55 +30,55 @@ namespace StrategyPlanner
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Barracks");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Palisade Wall");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Palisade Gate");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Outpost");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Military", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4});
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Farm");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Mining Camp");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Lumber Camp");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Dock");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Mill");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("House");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Economy", new System.Windows.Forms.TreeNode[] {
-            treeNode6,
-            treeNode7,
-            treeNode8,
-            treeNode9,
-            treeNode10,
-            treeNode11});
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Structures", new System.Windows.Forms.TreeNode[] {
-            treeNode5,
-            treeNode12});
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Fishing Ship");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Transport Ship");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Ships", new System.Windows.Forms.TreeNode[] {
-            treeNode14,
-            treeNode15});
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Militia");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Infantry", new System.Windows.Forms.TreeNode[] {
-            treeNode17});
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Villager");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Civilian", new System.Windows.Forms.TreeNode[] {
-            treeNode19});
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Units", new System.Windows.Forms.TreeNode[] {
-            treeNode16,
-            treeNode18,
-            treeNode20});
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Loom");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Economy", new System.Windows.Forms.TreeNode[] {
-            treeNode22});
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Feudal Age");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Ages", new System.Windows.Forms.TreeNode[] {
-            treeNode24});
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Techs", new System.Windows.Forms.TreeNode[] {
-            treeNode23,
-            treeNode25});
+            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("Barracks");
+            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("Palisade Wall");
+            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("Palisade Gate");
+            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("Outpost");
+            System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("Military", new System.Windows.Forms.TreeNode[] {
+            treeNode53,
+            treeNode54,
+            treeNode55,
+            treeNode56});
+            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("Farm");
+            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("Mining Camp");
+            System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("Lumber Camp");
+            System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("Dock");
+            System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("Mill");
+            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("House");
+            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("Economy", new System.Windows.Forms.TreeNode[] {
+            treeNode58,
+            treeNode59,
+            treeNode60,
+            treeNode61,
+            treeNode62,
+            treeNode63});
+            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("Structures", new System.Windows.Forms.TreeNode[] {
+            treeNode57,
+            treeNode64});
+            System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("Fishing Ship");
+            System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("Transport Ship");
+            System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("Ships", new System.Windows.Forms.TreeNode[] {
+            treeNode66,
+            treeNode67});
+            System.Windows.Forms.TreeNode treeNode69 = new System.Windows.Forms.TreeNode("Militia");
+            System.Windows.Forms.TreeNode treeNode70 = new System.Windows.Forms.TreeNode("Infantry", new System.Windows.Forms.TreeNode[] {
+            treeNode69});
+            System.Windows.Forms.TreeNode treeNode71 = new System.Windows.Forms.TreeNode("Villager");
+            System.Windows.Forms.TreeNode treeNode72 = new System.Windows.Forms.TreeNode("Civilian", new System.Windows.Forms.TreeNode[] {
+            treeNode71});
+            System.Windows.Forms.TreeNode treeNode73 = new System.Windows.Forms.TreeNode("Units", new System.Windows.Forms.TreeNode[] {
+            treeNode68,
+            treeNode70,
+            treeNode72});
+            System.Windows.Forms.TreeNode treeNode74 = new System.Windows.Forms.TreeNode("Loom");
+            System.Windows.Forms.TreeNode treeNode75 = new System.Windows.Forms.TreeNode("Economy", new System.Windows.Forms.TreeNode[] {
+            treeNode74});
+            System.Windows.Forms.TreeNode treeNode76 = new System.Windows.Forms.TreeNode("Feudal Age");
+            System.Windows.Forms.TreeNode treeNode77 = new System.Windows.Forms.TreeNode("Ages", new System.Windows.Forms.TreeNode[] {
+            treeNode76});
+            System.Windows.Forms.TreeNode treeNode78 = new System.Windows.Forms.TreeNode("Techs", new System.Windows.Forms.TreeNode[] {
+            treeNode75,
+            treeNode77});
             this.mainPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.playerNamePanel = new System.Windows.Forms.Panel();
             this.playerNameLabel = new System.Windows.Forms.Label();
@@ -162,6 +174,7 @@ namespace StrategyPlanner
             this.goldGatherersPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.relicsBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeCartsBox)).BeginInit();
+            this.SuspendLayout();
             // 
             // mainPanel
             // 
@@ -174,7 +187,7 @@ namespace StrategyPlanner
             this.mainPanel.Controls.Add(this.boughtItemsPanel);
             this.mainPanel.Location = new System.Drawing.Point(3, 3);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(451, 376);
+            this.mainPanel.Size = new System.Drawing.Size(458, 383);
             this.mainPanel.TabIndex = 2;
             // 
             // playerNamePanel
@@ -630,62 +643,62 @@ namespace StrategyPlanner
             this.availableItemsTree.Dock = System.Windows.Forms.DockStyle.Fill;
             this.availableItemsTree.Location = new System.Drawing.Point(3, 165);
             this.availableItemsTree.Name = "availableItemsTree";
-            treeNode1.Name = "barracksStruct";
-            treeNode1.Text = "Barracks";
-            treeNode2.Name = "palisadeWallStruct";
-            treeNode2.Text = "Palisade Wall";
-            treeNode3.Name = "palisadeGateStruct";
-            treeNode3.Text = "Palisade Gate";
-            treeNode4.Name = "outpostStruct";
-            treeNode4.Text = "Outpost";
-            treeNode5.Name = "militaryBuildings";
-            treeNode5.Text = "Military";
-            treeNode6.Name = "farmStruct";
-            treeNode6.Text = "Farm";
-            treeNode7.Name = "miningCampStruct";
-            treeNode7.Text = "Mining Camp";
-            treeNode8.Name = "lumberCampStruct";
-            treeNode8.Text = "Lumber Camp";
-            treeNode9.Name = "dockStruct";
-            treeNode9.Text = "Dock";
-            treeNode10.Name = "millStruct";
-            treeNode10.Text = "Mill";
-            treeNode11.Name = "houseStruct";
-            treeNode11.Text = "House";
-            treeNode12.Name = "economyBuilding";
-            treeNode12.Text = "Economy";
-            treeNode13.Name = "structuresRoot";
-            treeNode13.Text = "Structures";
-            treeNode14.Name = "fishingShipUnit";
-            treeNode14.Text = "Fishing Ship";
-            treeNode15.Name = "transportShipUnit";
-            treeNode15.Text = "Transport Ship";
-            treeNode16.Name = "shipUnits";
-            treeNode16.Text = "Ships";
-            treeNode17.Name = "militiaUnit";
-            treeNode17.Text = "Militia";
-            treeNode18.Name = "infantryUnits";
-            treeNode18.Text = "Infantry";
-            treeNode19.Name = "villagerUnit";
-            treeNode19.Text = "Villager";
-            treeNode20.Name = "civilianUnits";
-            treeNode20.Text = "Civilian";
-            treeNode21.Name = "unitsRoot";
-            treeNode21.Text = "Units";
-            treeNode22.Name = "loomTech";
-            treeNode22.Text = "Loom";
-            treeNode23.Name = "economyTechs";
-            treeNode23.Text = "Economy";
-            treeNode24.Name = "feudalAgeTech";
-            treeNode24.Text = "Feudal Age";
-            treeNode25.Name = "ageTechs";
-            treeNode25.Text = "Ages";
-            treeNode26.Name = "techsRoot";
-            treeNode26.Text = "Techs";
+            treeNode53.Name = "barracksStruct";
+            treeNode53.Text = "Barracks";
+            treeNode54.Name = "palisadeWallStruct";
+            treeNode54.Text = "Palisade Wall";
+            treeNode55.Name = "palisadeGateStruct";
+            treeNode55.Text = "Palisade Gate";
+            treeNode56.Name = "outpostStruct";
+            treeNode56.Text = "Outpost";
+            treeNode57.Name = "militaryBuildings";
+            treeNode57.Text = "Military";
+            treeNode58.Name = "farmStruct";
+            treeNode58.Text = "Farm";
+            treeNode59.Name = "miningCampStruct";
+            treeNode59.Text = "Mining Camp";
+            treeNode60.Name = "lumberCampStruct";
+            treeNode60.Text = "Lumber Camp";
+            treeNode61.Name = "dockStruct";
+            treeNode61.Text = "Dock";
+            treeNode62.Name = "millStruct";
+            treeNode62.Text = "Mill";
+            treeNode63.Name = "houseStruct";
+            treeNode63.Text = "House";
+            treeNode64.Name = "economyBuilding";
+            treeNode64.Text = "Economy";
+            treeNode65.Name = "structuresRoot";
+            treeNode65.Text = "Structures";
+            treeNode66.Name = "fishingShipUnit";
+            treeNode66.Text = "Fishing Ship";
+            treeNode67.Name = "transportShipUnit";
+            treeNode67.Text = "Transport Ship";
+            treeNode68.Name = "shipUnits";
+            treeNode68.Text = "Ships";
+            treeNode69.Name = "militiaUnit";
+            treeNode69.Text = "Militia";
+            treeNode70.Name = "infantryUnits";
+            treeNode70.Text = "Infantry";
+            treeNode71.Name = "villagerUnit";
+            treeNode71.Text = "Villager";
+            treeNode72.Name = "civilianUnits";
+            treeNode72.Text = "Civilian";
+            treeNode73.Name = "unitsRoot";
+            treeNode73.Text = "Units";
+            treeNode74.Name = "loomTech";
+            treeNode74.Text = "Loom";
+            treeNode75.Name = "economyTechs";
+            treeNode75.Text = "Economy";
+            treeNode76.Name = "feudalAgeTech";
+            treeNode76.Text = "Feudal Age";
+            treeNode77.Name = "ageTechs";
+            treeNode77.Text = "Ages";
+            treeNode78.Name = "techsRoot";
+            treeNode78.Text = "Techs";
             this.availableItemsTree.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode13,
-            treeNode21,
-            treeNode26});
+            treeNode65,
+            treeNode73,
+            treeNode78});
             this.availableItemsTree.Size = new System.Drawing.Size(196, 207);
             this.availableItemsTree.TabIndex = 5;
             // 
@@ -939,11 +952,14 @@ namespace StrategyPlanner
             this.tradeCartsBox.Size = new System.Drawing.Size(27, 20);
             this.tradeCartsBox.TabIndex = 2;
             // 
-            // mainPanel
+            // PlayerPanel
             // 
-            //this.panelContainer.Add(mainPanel);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(458, 383);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.Controls.Add(this.mainPanel);
+            this.Name = "PlayerPanel";
+            this.Size = new System.Drawing.Size(464, 389);
             this.mainPanel.ResumeLayout(false);
             this.playerNamePanel.ResumeLayout(false);
             this.playerNamePanel.PerformLayout();
@@ -987,6 +1003,7 @@ namespace StrategyPlanner
             this.goldGatherersPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.relicsBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tradeCartsBox)).EndInit();
+            this.ResumeLayout(false);
 
         }
 

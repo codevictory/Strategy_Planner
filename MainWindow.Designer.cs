@@ -70,7 +70,7 @@
             this.aboutToolStripMenuItem});
             this.mainMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.mainMenuStrip.Name = "mainMenuStrip";
-            this.mainMenuStrip.Size = new System.Drawing.Size(868, 24);
+            this.mainMenuStrip.Size = new System.Drawing.Size(747, 24);
             this.mainMenuStrip.TabIndex = 1;
             this.mainMenuStrip.Text = "Main menu strip";
             // 
@@ -165,7 +165,7 @@
             this.progressBarStrip});
             this.statusStrip.Location = new System.Drawing.Point(0, 547);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(868, 22);
+            this.statusStrip.Size = new System.Drawing.Size(747, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "statusStrip1";
             // 
@@ -176,6 +176,7 @@
             // 
             // mainPanel
             // 
+            this.mainPanel.AutoScroll = true;
             this.mainPanel.Controls.Add(this.gameTimeLabel);
             this.mainPanel.Controls.Add(this.gameInfoPanel);
             this.mainPanel.Controls.Add(this.playersPanel);
@@ -183,7 +184,7 @@
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(0, 24);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(868, 523);
+            this.mainPanel.Size = new System.Drawing.Size(747, 523);
             this.mainPanel.TabIndex = 6;
             // 
             // gameTimeLabel
@@ -236,10 +237,13 @@
             // playersPanel
             // 
             this.playersPanel.AutoScroll = true;
+            this.playersPanel.AutoSize = true;
+            this.playersPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.playersPanel.BackColor = System.Drawing.SystemColors.Control;
-            this.playersPanel.Location = new System.Drawing.Point(0, 60);
+            this.playersPanel.Location = new System.Drawing.Point(0, 74);
+            this.playersPanel.MaximumSize = new System.Drawing.Size(1500, 0);
             this.playersPanel.Name = "playersPanel";
-            this.playersPanel.Size = new System.Drawing.Size(460, 384);
+            this.playersPanel.Size = new System.Drawing.Size(0, 0);
             this.playersPanel.TabIndex = 0;
             // 
             // logoBox
@@ -256,7 +260,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(868, 569);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(747, 569);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.mainMenuStrip);
