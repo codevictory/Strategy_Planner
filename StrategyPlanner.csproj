@@ -45,16 +45,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="APlayer.cs" />
     <Compile Include="Civilization.cs" />
     <Compile Include="Game.cs" />
-    <Compile Include="IGUIPanel.cs" />
+    <Compile Include="InitPlayerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InitPlayerPanel.Designer.cs">
+      <DependentUpon>InitPlayerPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Item.cs" />
-    <Compile Include="MainWindow.cs">
+    <Compile Include="GamePanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainWindow.Designer.cs">
-      <DependentUpon>MainWindow.cs</DependentUpon>
+    <Compile Include="GamePanel.Designer.cs">
+      <DependentUpon>GamePanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Player.cs" />
     <Compile Include="PlayerPanel.cs">
@@ -65,8 +69,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainWindow.resx">
-      <DependentUpon>MainWindow.cs</DependentUpon>
+    <EmbeddedResource Include="GamePanel.resx">
+      <DependentUpon>GamePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InitPlayerPanel.resx">
+      <DependentUpon>InitPlayerPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlayerPanel.resx">
       <DependentUpon>PlayerPanel.cs</DependentUpon>
@@ -95,7 +102,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assignment.txt" />
     <None Include="Pictures\main_logo.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

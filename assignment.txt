@@ -1,9 +1,0 @@
-﻿please create a project that will demonstrate following topics:
-
-- inheritance vs object composition
-- code inheritance
-- interface inheritance and difference between abstract classes and 
-interfaces
-- generics
-- delegates and events
-- singleton vs dependency injection technique

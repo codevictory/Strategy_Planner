@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StrategyPlanner
 {
-    class Player : APlayer
+    class Player
     {
         private int number;
         private string color;
@@ -19,9 +19,9 @@ namespace StrategyPlanner
         private uint pop_limit;
         //TODO allies List<T>
 
-        private enum PlayerColor { blue, red, green, yellow, cyan, violet, grey, orange };
-
-
+        private List<Item> units = new List<Item>();
+        private List<Item> structures = new List<Item>();
+        private List<Item> techs = new List<Item>();
 
         public int Number { get => number; set => number = value; }
         public string Color { get => color; set => color = value; }
@@ -32,9 +32,9 @@ namespace StrategyPlanner
         public int Stone { get => stone; set => stone = value; }
         public decimal Population { get => population; set => population = value; }
         public uint Pop_limit { get => pop_limit; set => pop_limit = value; }
-        internal List<Item> Units { get => units; set => units = value; }
-        internal List<Item> Structures { get => structures; set => structures = value; }
-        internal List<Item> Techs { get => techs; set => techs = value; }
+        public List<Item> Units { get => units; set => units = value; }
+        public List<Item> Structures { get => structures; set => structures = value; }
+        public List<Item> Techs { get => techs; set => techs = value; }
 
         public Player(int number, string color, string civ, int food, int wood, int gold, int stone, decimal population,
             uint pop_limit, List<Item> units, List<Item> structures, List<Item> techs)
